@@ -1,0 +1,7 @@
+ vers1 = "Mijn naam is Lukas de Jong, en luister vaak naar gezong"
+ vers2 = "Ik speel veel videospellen, maar vergeet niet de muzieknoten te tellen"
+ vers3 = "jazeker ik speel muziek, want zonder raak ik snel in paniek"
+ vers4 = "Van muziek ontspan ik, zonder ben ik een reusachtige stresskip"
+ vers5 = "Veel sporten doe ik niet, ook al fiets ik op hoge speed"
+ vers6 = "veel mensen vragen af, hoe snel fietsen kan die maf"
+ vers7 = "Ik ben niet goed in rijmen, dus houd ik bij deze op"
