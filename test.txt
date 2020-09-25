@@ -1,0 +1,245 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\lukas> whoami
+laptop-0shv83ej\lukas
+PS C:\Users\lukas> ls
+
+
+    Directory: C:\Users\lukas
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-r---        31-8-2020     22:07                3D Objects
+d-r---        31-8-2020     22:07                Contacts
+d-r---         7-9-2020     13:36                Creative Cloud Files
+d-----        31-8-2020     19:25                Documents
+d-r---         7-9-2020     08:40                Downloads
+d-r---        31-8-2020     22:07                Favorites
+d-r---        31-8-2020     22:07                Links
+d-r---        31-8-2020     22:07                Music
+d-----         7-9-2020     14:23                newDircetory
+dar--l         7-9-2020     13:36                OneDrive
+d-r---        31-8-2020     22:07                Saved Games
+d-r---        31-8-2020     22:07                Searches
+d-r---         2-9-2020     09:53                Videos
+
+
+PS C:\Users\lukas> ls a*
+PS C:\Users\lukas> md newDirectory
+
+
+    Directory: C:\Users\lukas
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         7-9-2020     14:45                newDirectory
+
+
+PS C:\Users\lukas> cd newDirectory
+PS C:\Users\lukas\newDirectory> cd..
+PS C:\Users\lukas> cd~
+cd~ : The term 'cd~' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the s
+pelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ cd~
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (cd~:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\lukas> cd ~
+PS C:\Users\lukas> rm newDirectory
+PS C:\Users\lukas> cd..
+PS C:\Users> cd..
+PS C:\> md f1m1
+
+
+    Directory: C:\
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         7-9-2020     14:47                f1m1
+
+
+PS C:\> cd user
+cd : Cannot find path 'C:\user' because it does not exist.
+At line:1 char:1
++ cd user
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\user:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\> cd lukas
+cd : Cannot find path 'C:\lukas' because it does not exist.
+At line:1 char:1
++ cd lukas
++ ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\lukas:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\> cd..
+PS C:\> cd user
+cd : Cannot find path 'C:\user' because it does not exist.
+At line:1 char:1
++ cd user
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\user:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\> cd ~
+PS C:\Users\lukas> cd f1m1
+cd : Cannot find path 'C:\Users\lukas\f1m1' because it does not exist.
+At line:1 char:1
++ cd f1m1
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\lukas\f1m1:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\lukas> cd..
+PS C:\Users> cd..
+PS C:\> cd f1m1
+PS C:\f1m1> md beroep
+
+
+    Directory: C:\f1m1
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         7-9-2020     14:50                beroep
+
+
+PS C:\f1m1> md python
+
+
+    Directory: C:\f1m1
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         7-9-2020     14:50                python
+
+
+PS C:\f1m1> md pvaardig
+
+
+    Directory: C:\f1m1
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         7-9-2020     14:50                pvaardig
+
+
+PS C:\f1m1> cd pvaardig
+PS C:\f1m1\pvaardig> md les01
+
+
+    Directory: C:\f1m1\pvaardig
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         7-9-2020     14:51                les01
+
+
+PS C:\f1m1\pvaardig> md les02
+
+
+    Directory: C:\f1m1\pvaardig
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         7-9-2020     14:51                les02
+
+
+PS C:\f1m1\pvaardig> md les03
+
+
+    Directory: C:\f1m1\pvaardig
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         7-9-2020     14:51                les03
+
+
+PS C:\f1m1\pvaardig> md les04
+
+
+    Directory: C:\f1m1\pvaardig
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         7-9-2020     14:51                les04
+
+
+PS C:\f1m1\pvaardig> md les05
+
+
+    Directory: C:\f1m1\pvaardig
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         7-9-2020     14:51                les05
+
+
+PS C:\f1m1\pvaardig> /md les 06
+/md : The term '/md' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the s
+pelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ /md les 06
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (/md:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\f1m1\pvaardig> md les06
+
+
+    Directory: C:\f1m1\pvaardig
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         7-9-2020     14:51                les06
+
+
+PS C:\f1m1\pvaardig> md les07
+
+
+    Directory: C:\f1m1\pvaardig
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         7-9-2020     14:51                les07
+
+
+PS C:\f1m1\pvaardig> md les08
+
+
+    Directory: C:\f1m1\pvaardig
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         7-9-2020     14:51                les08
+
+
+PS C:\f1m1\pvaardig> cd les01
+PS C:\f1m1\pvaardig\les01> notepad
+PS C:\f1m1\pvaardig\les01> notepad test.txt
+PS C:\f1m1\pvaardig\les01>
+
+
+
+
+
