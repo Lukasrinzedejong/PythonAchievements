@@ -1,5 +1,11 @@
-lukasStats = (" Character: Lukas \n Special Ability: Sits and does nothing \n Mania: 571 \n Power: over 9000 \n Speed: Fast")
+characterName = ("Character: Lukas de Jong")
+specialAbility = ("Special Move: Uses ten meters of LED strips to temporarily disable movement")
+mania = ("Mania: 571")
+power = ("Power: over 9000")
+speed = ("Speed: Fast")
 
-print(lukasStats)
-
-        
+print(characterName)
+print(specialAbility)
+print(mania)
+print(power)
+print(speed)
