@@ -1,11 +1,13 @@
-characterName = ("Character: Lukas de Jong")
-specialAbility = ("Special Move: Uses ten meters of LED strips to temporarily disable movement")
-mania = ("Mania: 571")
-power = ("Power: over 9000")
-speed = ("Speed: Fast")
+characterName = "Lukas de Jong"
+specialAbility = "Uses ten meters of LED strips to temporarily disable movement"
+mania = 571
+power = "over 9000"
+speed = "Fast"
+equipped = False
 
-print(characterName)
-print(specialAbility)
-print(mania)
-print(power)
-print(speed)
+print("Character:",characterName)
+print("Special Move:",specialAbility)
+print("mania:",mania)
+print("Power:",power)
+print("speed:",speed)
+print("equipped:",equipped)
